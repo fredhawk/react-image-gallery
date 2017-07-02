@@ -58,18 +58,15 @@ class Slider extends Component {
   }
   render() {
     const image = this.state.images[this.state.currentSlide];
-    const slide = (
-      <picture className="slide">
-        <img src={image.url} alt={image.alternate} />
-        <div className="slide-caption">
-          {image.caption}
-        </div>
-      </picture>
-    );
     return (
       <div className="Slider">
         <div className="slides">
-          {slide}
+          <picture className="slide">
+            <img src={image.url} alt={image.alternate} />
+            <div className="slide-caption">
+              {image.caption}
+            </div>
+          </picture>
         </div>
         <div className="btns">
           <button className="btn" onClick={this.prevSlide}>
