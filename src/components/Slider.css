@@ -1,0 +1,14 @@
+.Slider {
+  width: 500px;
+  overflow: hidden;
+  margin: 30px auto;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
+}
+img {
+  width: 500px;
+}
