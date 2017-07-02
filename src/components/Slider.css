@@ -1,4 +1,4 @@
-.Slider {
+.slides {
   width: 500px;
   overflow: hidden;
   margin: 30px auto;
@@ -9,6 +9,7 @@
   -moz-box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
 }
-img {
-  width: 500px;
+.slides img {
+  min-width: 500px;
+  max-height: 400px;
 }
