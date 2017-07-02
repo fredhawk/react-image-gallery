@@ -59,7 +59,7 @@ class Slider extends Component {
   render() {
     const image = this.state.images[this.state.currentSlide];
     const slide = (
-      <picture>
+      <picture className="slide">
         <img src={image.url} alt={image.alternate} />
         <div className="slide-caption">
           {image.caption}
