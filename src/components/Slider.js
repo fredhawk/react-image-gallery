@@ -45,7 +45,7 @@ class Slider extends Component {
     });
   }
   createTimer() {
-    const interval = setInterval(() => this.nextSlide(), 1000);
+    const interval = setInterval(() => this.nextSlide(), 1500);
     this.setState({
       interval: interval
     });
@@ -58,17 +58,32 @@ class Slider extends Component {
   }
   render() {
     const image = this.state.images[this.state.currentSlide];
-    const slide = <img src={image.url} alt={image.alternate} />;
+    const slide = (
+      <picture>
+        <img src={image.url} alt={image.alternate} />
+        <div className="slide-caption">
+          {image.caption}
+        </div>
+      </picture>
+    );
     return (
       <div className="Slider">
         <div className="slides">
           {slide}
         </div>
         <div className="btns">
-          <button onClick={this.prevSlide}>Prev</button>
-          <button onClick={this.handleStartSlideshow}>Start</button>
-          <button onClick={this.handleStopSlideshow}>Stop</button>
-          <button onClick={this.nextSlide}>Next</button>
+          <button className="btn" onClick={this.prevSlide}>
+            Prev
+          </button>
+          <button className="btn" onClick={this.handleStartSlideshow}>
+            Start
+          </button>
+          <button className="btn" onClick={this.handleStopSlideshow}>
+            Stop
+          </button>
+          <button className="btn" onClick={this.nextSlide}>
+            Next
+          </button>
         </div>
       </div>
     );

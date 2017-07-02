@@ -16,7 +16,18 @@
   min-width: 500px;
   max-height: 400px;
 }
+.slide-caption {
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
 .btns {
   display: flex;
   justify-content: space-around;
+}
+.btn {
+  background: #0077c2;
+  font-size: 1.5em;
+  padding: 0.5em 1.2em;
+  border: 1px solid #80d6ff;
+  border-radius: 5px;
 }
