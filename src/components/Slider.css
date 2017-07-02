@@ -1,8 +1,11 @@
-.slides {
+.Slider {
   width: 500px;
-  overflow: hidden;
   margin: 30px auto;
+}
+.slides {
+  overflow: hidden;
   display: flex;
+  margin-bottom: 2em;
   border: 2px solid white;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 28px -11px rgba(0, 0, 0, 0.75);
@@ -12,4 +15,8 @@
 .slides img {
   min-width: 500px;
   max-height: 400px;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
 }
